@@ -23,18 +23,15 @@ export default function Contact() {
               smooth={true}
               offset={-80}
             >
-              <LogoImg />
               <h1
                 className="font15 extraBold whiteColor"
                 style={{ marginLeft: "15px" }}
               >
-                Fanatic
+                Ousida
               </h1>
             </Link>
             <StyleP className="whiteColor font13">
-              © {getCurrentYear()} -{" "}
-              <span className="purpleColor font13">Outsida</span> All Rights
-              Reserved
+              © {getCurrentYear()} - All Rights Reserved
             </StyleP>
 
             <Link
