@@ -11,7 +11,7 @@ export default function Contact() {
 
   return (
     <Wrapper>
-      <div className="darkBg">
+      <div className="bg-brandBlueFive">
         <div className="container">
           <InnerWrapper
             className="flexSpaceCenter"

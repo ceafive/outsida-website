@@ -7,7 +7,7 @@ import LogoIcon from "../../assets/svg/Logo";
 
 export default function Sidebar({ sidebarOpen, toggleSidebar }) {
   return (
-    <Wrapper className="animate darkBg" sidebarOpen={sidebarOpen}>
+    <Wrapper className="animate bg-brandBlueFive" sidebarOpen={sidebarOpen}>
       <SidebarHeader className="flexSpaceCenter">
         <div className="flexNullCenter">
           <LogoIcon />
@@ -15,7 +15,10 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             fanatic
           </h1>
         </div>
-        <CloseBtn onClick={() => toggleSidebar(!sidebarOpen)} className="animate pointer">
+        <CloseBtn
+          onClick={() => toggleSidebar(!sidebarOpen)}
+          className="animate pointer"
+        >
           <CloseIcon />
         </CloseBtn>
       </SidebarHeader>
@@ -35,7 +38,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             Home
           </Link>
         </li>
-        <li className="semiBold font15 pointer">
+        {/* <li className="semiBold font15 pointer">
           <Link
             onClick={() => toggleSidebar(!sidebarOpen)}
             activeClass="active"
@@ -104,9 +107,9 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
           >
             Contact
           </Link>
-        </li>
+        </li> */}
       </UlStyle>
-      <UlStyle className="flexSpaceCenter">
+      {/* <UlStyle className="flexSpaceCenter">
         <li className="semiBold font15 pointer">
           <a href="/" style={{ padding: "10px 30px 10px 0" }} className="whiteColor">
             Log in
@@ -117,7 +120,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             Get Started
           </a>
         </li>
-      </UlStyle>
+      </UlStyle> */}
     </Wrapper>
   );
 }
