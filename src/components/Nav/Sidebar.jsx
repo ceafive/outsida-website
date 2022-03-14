@@ -10,9 +10,9 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
     <Wrapper className="animate bg-brandBlueFive" sidebarOpen={sidebarOpen}>
       <SidebarHeader className="flexSpaceCenter">
         <div className="flexNullCenter">
-          <LogoIcon />
+          {/* <LogoIcon /> */}
           <h1 className="whiteColor font20" style={{ marginLeft: "15px" }}>
-            fanatic
+            Outsida
           </h1>
         </div>
         <CloseBtn
