@@ -9,14 +9,16 @@ import Pricing from "../components/Sections/Pricing";
 import Contact from "../components/Sections/Contact";
 import Footer from "../components/Sections/Footer";
 
+import styled from "styled-components";
+
 export default function Landing() {
   return (
     <>
       <TopNavbar />
       <Header />
       <Services />
-      <Pricing />
-      <Contact />
+      {/* <Pricing /> */}
+      {/* <Contact /> */}
       <Footer />
     </>
   );

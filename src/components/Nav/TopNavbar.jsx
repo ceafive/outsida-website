@@ -58,7 +58,7 @@ export default function TopNavbar() {
                 Home
               </Link>
             </li>
-            <li className="semiBold font15 pointer">
+            {/* <li className="semiBold font15 pointer">
               <Link
                 activeClass="active"
                 style={{ padding: "10px 15px" }}
@@ -93,7 +93,7 @@ export default function TopNavbar() {
               >
                 Contact
               </Link>
-            </li>
+            </li> */}
           </UlWrapper>
         </NavInner>
       </Wrapper>

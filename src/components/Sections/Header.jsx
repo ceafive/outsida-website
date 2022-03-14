@@ -7,6 +7,9 @@ import HeaderImage from "../../assets/img/girl-dancing.jpeg";
 import QuotesIcon from "../../assets/svg/Quotes";
 import Dots from "../../assets/svg/Dots";
 
+import playstore from "../../assets/img/google-play-badge.png";
+import appstore from "../../assets/img/app-store-badge.png";
+
 export default function Header() {
   return (
     <Wrapper id="home" className="container flexSpaceCenter">
@@ -20,9 +23,26 @@ export default function Header() {
             events. You can also see popular and trending events that everyone
             is going to.
           </HeaderP>
-          {/* <BtnWrapper>
-            <FullButton title="Get Started" />
-          </BtnWrapper> */}
+          <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0" }}>
+            <div style={{ width: "190px" }}>
+              <a
+                href="https://bit.ly/3Jd5Kkq"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                <img src={playstore} alt="" />
+              </a>
+            </div>
+            <div style={{ width: "190px", marginLeft: "15px" }}>
+              <a
+                href="https://apple.co/3i78NyQ"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                <img src={appstore} alt="" />
+              </a>
+            </div>
+          </ButtonsRow>
         </div>
       </LeftSide>
       <RightSide>
@@ -164,5 +184,11 @@ const DotsWrapper = styled.div`
   }
   @media (max-width: 560px) {
     display: none;
+  }
+`;
+
+const ButtonsRow = styled.div`
+  @media (max-width: 860px) {
+    justify-content: space-between;
   }
 `;
