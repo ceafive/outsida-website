@@ -24,7 +24,7 @@ export default function Header() {
             is going to.
           </HeaderP>
           <h2 className="text-lg extraBold">Download Now</h2>
-          <ButtonsRow className="flexNullCenter" style={{ margin: "0 0" }}>
+          <ButtonsRow className="flexNullCenter" style={{ margin: "0" }}>
             <div style={{ width: "190px" }}>
               <a
                 href="https://bit.ly/3Jd5Kkq"
