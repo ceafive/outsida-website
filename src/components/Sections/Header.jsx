@@ -23,6 +23,7 @@ export default function Header() {
             events. You can also see popular and trending events that everyone
             is going to.
           </HeaderP>
+          <h2 className="font40 extraBold">Download Now</h2>
           <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0" }}>
             <div style={{ width: "190px" }}>
               <a
