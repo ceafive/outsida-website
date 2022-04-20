@@ -15,18 +15,19 @@ export default function Header() {
     <Wrapper id="home" className="container flexSpaceCenter">
       <LeftSide className="flexCenter">
         <div>
-          <h1 className="extraBold text-7xl leading-none w-12/12">
+          <h1 className="extraBold lg:text-7xl leading-none text-5xl">
             Looking for an event?
           </h1>
-          <HeaderP className="text-lg font-light">
+          <HeaderP className="text-lg font-light mx-8 lg:mx-0">
             Find events happening around you, schedule reminders and favourite
             events. You can also see popular and trending events that everyone
             is going to.
           </HeaderP>
-          <h2 className="text-lg extraBold">Download Now</h2>
-          <ButtonsRow className="flexNullCenter" style={{ margin: "0" }}>
-            <div style={{ width: "190px" }}>
+
+          <div className="flex  justify-center lg:justify-start px-10 lg:px-0 ">
+            <div className="w-[150px] lg:w-[190px] h-auto">
               <a
+                className=""
                 href="https://bit.ly/3Jd5Kkq"
                 target={"_blank"}
                 rel="noreferrer"
@@ -34,7 +35,7 @@ export default function Header() {
                 <img src={playstore} alt="" />
               </a>
             </div>
-            <div style={{ width: "190px", marginLeft: "15px" }}>
+            <div className="w-[150px] lg:w-[190px] ml-[15px] h-auto">
               <a
                 href="https://apple.co/3i78NyQ"
                 target={"_blank"}
@@ -43,16 +44,15 @@ export default function Header() {
                 <img src={appstore} alt="" />
               </a>
             </div>
-          </ButtonsRow>
+          </div>
         </div>
       </LeftSide>
       <RightSide>
         <ImageWrapper>
           <Img
-            className="radius8"
+            className="radius8 w-[426px] h-[507px] lg:w-[400px] lg:h-[607px] !z-[9]"
             src={HeaderImage}
             alt="office"
-            style={{ zIndex: 9, width: 426, height: 607 }}
           />
           <QuoteWrapper className="flexCenter bg-brandBlueSeven radius8">
             <QuotesWrapper>
@@ -115,10 +115,10 @@ const RightSide = styled.div`
 `;
 const HeaderP = styled.div`
   max-width: 470px;
-  padding: 15px 0 50px 0;
+  padding: 15px 0 20px 0;
   line-height: 1.5rem;
   @media (max-width: 960px) {
-    padding: 15px 0 50px 0;
+    padding: 15px 0 20px 0;
     text-align: center;
     max-width: 100%;
   }
@@ -152,8 +152,6 @@ const ImageWrapper = styled.div`
 `;
 const Img = styled.img`
   @media (max-width: 560px) {
-    width: 80%;
-    height: auto;
   }
 `;
 const QuoteWrapper = styled.div`

@@ -1,6 +1,5 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
 
 html,
 body,
@@ -354,3 +353,5 @@ body {
 .whiteBg {
   background-color: #fff;
 }
+
+@tailwind utilities;
